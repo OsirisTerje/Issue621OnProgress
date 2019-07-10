@@ -24,8 +24,8 @@ namespace Tests
         [Test]
         public void ShowWriteLineFails()
         {
-            TestContext.WriteLine("WriteLine");
-            Assert.Fail("This failed");
+            TestContext.Error.WriteLine("WriteLine");
+           
         }
 
     }
